@@ -1,0 +1,10 @@
+CORNER CAFE
+Receipt #88213
+Date: March 14, 2024  09:42 AM
+Latte                  4.50
+Croissant              3.25
+Subtotal               7.75
+Tax                    0.62
+Total                  8.37
+VISA ****4417
+Thank you!

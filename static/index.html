@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weissenberg</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318181b'/%3E%3Cpath d='M10 9h8l4 4v10H10z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="app">
+  <header class="top">
+    <div class="brand"><span class="logo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg></span>Weissenberg</div>
+    <div class="spacer"></div>
+    <button class="btn ghost" id="datefmt" title="How ambiguous dates like 03/04/2024 are read (applies to newly added files)"></button>
+    <button class="btn" id="addBtn">Add files</button>
+    <div class="menu">
+      <button class="btn primary" id="exportBtn">Export <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 3.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="pop" id="exportPop" hidden>
+        <a data-fmt="xlsx">Excel <small>.xlsx · 3 sheets</small></a>
+        <a data-fmt="csv">CSV <small>documents</small></a>
+        <a data-fmt="line_items">CSV <small>line items</small></a>
+        <a data-fmt="json">JSON</a>
+        <label class="chk-row"><input type="checkbox" id="verifiedOnly"> Verified only</label>
+      </div>
+    </div>
+  </header>
+
+  <section id="empty" class="empty" hidden>
+    <div class="drop" id="dropzone">
+      <div class="drop-ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3"/></svg></div>
+      <h1>Drop documents here</h1>
+      <p>Invoices, receipts, contracts, forms<br><span>PDF · images · Word · text</span></p>
+      <button class="btn primary big" id="chooseBtn">Choose files</button>
+    </div>
+  </section>
+
+  <main id="main" hidden>
+    <aside class="list">
+      <div class="list-head">
+        <div class="count" id="count"></div>
+        <div class="bar"><i id="barFill"></i></div>
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="items" id="items"></div>
+      <div class="list-foot"><button class="link" id="clearBtn">Clear all</button></div>
+    </aside>
+    <section class="viewer">
+      <div class="tabs" id="tabs"></div>
+      <div class="stage" id="stage"></div>
+    </section>
+    <section class="form">
+      <div class="form-scroll" id="form"></div>
+      <div class="foot" id="foot"></div>
+    </section>
+  </main>
+  <input type="file" id="file" multiple hidden accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.bmp,.webp,.docx,.txt">
+  <div class="veil" id="veil" hidden><div>Drop to add</div></div>
+  <div class="toast" id="toast" hidden></div>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

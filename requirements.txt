@@ -1,0 +1,5 @@
+openpyxl
+pdfplumber
+python-docx
+pillow
+pytesseract        # optional: OCR for photos/scans (also needs the Tesseract program installed)

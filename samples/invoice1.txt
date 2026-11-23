@@ -1,0 +1,19 @@
+Acme Supplies GmbH
+Hauptstrasse 12, 09337 Hohenstein-Ernstthal
+
+INVOICE
+Invoice Number: INV-2024-0042
+Invoice Date: 05/03/2024
+Due Date: 04/03/2024
+PO Number: PO-7781
+Bill To: Muster AG
+Customer email: buyer@muster.de
+
+Description          Qty   Unit Price   Amount
+Widget A              10      12.50      125.00
+Gadget B               2      99.99      199.98
+Service fee            1      50.00       60.00
+
+Subtotal: 384.98
+VAT (19%): 73.15
+Total Due: 500.00 EUR

@@ -1,0 +1,8 @@
+# your uploaded documents and saved work - never commit these (they can contain personal data)
+data/
+output/
+
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
