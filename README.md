@@ -1,3 +1,6 @@
+<img width="1566" height="819" alt="image" src="https://github.com/user-attachments/assets/e7947f6e-d945-44e0-a157-3f7f1c7d29c5" />
+
+
 A local document processing app for extracting and validating structured information from invoices, receipts, contracts, and forms. Built as a learning project to explore document processing, OCR, data extraction, and validation.
 
 The app processes documents, extracts relevant fields, identifies missing or inconsistent information, and lets users review and correct the results before exporting them to Excel, CSV, or JSON. Everything runs locally, without external APIs.
